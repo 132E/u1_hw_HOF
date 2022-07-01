@@ -5,6 +5,9 @@ function printNums(nums) {
    *  Using .forEach, add each number in the nums array to a new array.
    * @param nums => [1,2,3,4]
    */
+  const arr = [];
+  nums.forEach((nums) => arr.push(nums));
+  return arr;
 }
 
 function returnSums(nums) {
@@ -12,7 +15,9 @@ function returnSums(nums) {
    * Using forEach, push the sum of n plus the index
    * to a new array and return the new array
    * @param nums => [1,2,3,4,5]
-   */
+   */ const arr = [];
+  nums.forEach((nums) => arr.push(nums + nums.indexof(nums)));
+  return arr;
 }
 
 function returnTotal(objs) {
@@ -20,7 +25,9 @@ function returnTotal(objs) {
    * Using forEach return a number that is the total sum of all numbers in the array of objects.
    * The key for each object will be n
    * @param objs => [{n:1}]
-   */
+   */ let sum = 0;
+  objs.forEach((objs) => (sum += objs.n));
+  return sum;
 }
 
 function printMoney(decimals) {
@@ -76,5 +83,5 @@ module.exports = {
   returnAllTrueValues,
   sortObjectsByValue,
   addTwo,
-  joinStrings
-}
+  joinStrings,
+};
