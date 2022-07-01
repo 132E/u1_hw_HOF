@@ -46,7 +46,7 @@ function returnAllTrueValues(values) {
   /**
    * @param values => [{name: 'Joe', happy:false}]
    * Using .filter, return an array of objects where happy equals true
-   */
+   */ return values.filter((values) => values.happy === true);
 }
 
 function addTwo(nums) {
@@ -57,6 +57,7 @@ function addTwo(nums) {
    */
   //   3
   //   4 => 7
+  return nums.reduce((a, b) => a + (b + 2), 0);
 }
 
 function joinStrings(strings) {
@@ -64,6 +65,7 @@ function joinStrings(strings) {
    * @param strings => ['g', 'f', 'z']
    * Using .reduce, return a new string containing each string from the strings array.
    */
+  return strings.reduce((a, b) => a + b, ``);
 }
 
 //Bonus
