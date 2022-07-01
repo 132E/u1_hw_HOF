@@ -39,7 +39,7 @@ function printMoney(decimals) {
    * output: ['$12.34', '$9.99']
    * }
    * Hint: Not all decimals have two places, make sure to return each decimal with the proper decimal places. .toFixed may be useful :)
-   */
+   */ return decimals.map((decimal) => "$" + decimal.toFixed(2).toString());
 }
 
 function returnAllTrueValues(values) {
